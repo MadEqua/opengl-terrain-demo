@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <IncludePath>$(IncludePath);$(SolutionDir)\libs\glew-1.13.0-win32\include;$(SolutionDir)\libs\glfw-3.1.2.bin.WIN32\include;$(SolutionDir)\libs\glm\;$(SolutionDir)\libs\assimp-3.0.1\include;$(SolutionDir)\libs\DevIL\include;$(SolutionDir)\OpenGLFramework\src</IncludePath>
+    <_PropertySheetDisplayName>sharedProperties</_PropertySheetDisplayName>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\libs\glew-1.13.0-win32\lib\Release\Win32;$(SolutionDir)\libs\glfw-3.1.2.bin.WIN32\lib-vc2013;$(SolutionDir)\libs\assimp-3.0.1\lib\assimp_release-dll_win32;$(SolutionDir)\libs\DevIL\lib;$(SolutionDir)\Release;$(LibraryPath)</LibraryPath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)\libs\glew-1.13.0-win32\lib\Release\Win32;$(SolutionDir)\libs\glfw-3.1.2.bin.WIN32\lib-vc2013;$(SolutionDir)\libs\assimp-3.0.1\lib\assimp_debug-dll_win32;$(SolutionDir)\libs\DevIL\lib;$(SolutionDir)\Debug;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SourcePath)</SourcePath>
+    <TargetExt>.lib</TargetExt>
+    <ReferencePath>$(ReferencePath)</ReferencePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>OpenGLFramework.lib;opengl32.lib;glew32.lib;glfw3.lib;assimp.lib;DevIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F9276E43-A790-4740-94EC-D28DDE92BC4E}</ProjectGuid>
+    <RootNamespace>OpenGL</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="sharedProperties.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="sharedProperties.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Automation.cpp" />
+    <ClCompile Include="src\CubicInterpolator.cpp" />
+    <ClCompile Include="src\DirectionalLight.cpp" />
+    <ClCompile Include="src\FBO.cpp" />
+    <ClCompile Include="src\FreeCamera.cpp" />
+    <ClCompile Include="src\GLBuffer.cpp" />
+    <ClCompile Include="src\GLObject.cpp" />
+    <ClCompile Include="src\AABB.cpp" />
+    <ClCompile Include="src\AABBDebugSceneObject.cpp" />
+    <ClCompile Include="src\AssetManager.cpp" />
+    <ClCompile Include="src\Camera.cpp" />
+    <ClCompile Include="src\Frustum.cpp" />
+    <ClCompile Include="src\HermiteInterpolator.cpp" />
+    <ClCompile Include="src\IBO.cpp" />
+    <ClCompile Include="src\Interpolator.cpp" />
+    <ClCompile Include="src\Intersections.cpp" />
+    <ClCompile Include="src\Light.cpp" />
+    <ClCompile Include="src\LinearInterpolator.cpp" />
+    <ClCompile Include="src\LookAtCamera.cpp" />
+    <ClCompile Include="src\Material.cpp" />
+    <ClCompile Include="src\Mesh.cpp" />
+    <ClCompile Include="src\Octree.cpp" />
+    <ClCompile Include="src\OctreeDebugSceneObject.cpp" />
+    <ClCompile Include="src\Plane.cpp" />
+    <ClCompile Include="src\SceneObject.cpp" />
+    <ClCompile Include="src\Shader.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\Application.cpp" />
+    <ClCompile Include="src\ShaderProgram.cpp" />
+    <ClCompile Include="src\SkyBox.cpp" />
+    <ClCompile Include="src\Texture.cpp" />
+    <ClCompile Include="src\Texture1D.cpp" />
+    <ClCompile Include="src\Texture2D.cpp" />
+    <ClCompile Include="src\Texture2DArray.cpp" />
+    <ClCompile Include="src\TextureCube.cpp" />
+    <ClCompile Include="src\Transform.cpp" />
+    <ClCompile Include="src\Utils.cpp" />
+    <ClCompile Include="src\VAO.cpp" />
+    <ClCompile Include="src\VBO.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Automation.h" />
+    <ClInclude Include="src\CubicInterpolator.h" />
+    <ClInclude Include="src\DirectionalLight.h" />
+    <ClInclude Include="src\FBO.h" />
+    <ClInclude Include="src\FreeCamera.h" />
+    <ClInclude Include="src\GLBuffer.h" />
+    <ClInclude Include="src\GLObject.h" />
+    <ClInclude Include="src\AABB.h" />
+    <ClInclude Include="src\AABBDebugSceneObject.h" />
+    <ClInclude Include="src\Asset.h" />
+    <ClInclude Include="src\AssetManager.h" />
+    <ClInclude Include="src\Camera.h" />
+    <ClInclude Include="src\EventListener.h" />
+    <ClInclude Include="src\Frustum.h" />
+    <ClInclude Include="src\HermiteInterpolator.h" />
+    <ClInclude Include="src\IBO.h" />
+    <ClInclude Include="src\Interpolator.h" />
+    <ClInclude Include="src\Intersections.h" />
+    <ClInclude Include="src\Light.h" />
+    <ClInclude Include="src\LinearInterpolator.h" />
+    <ClInclude Include="src\LookAtCamera.h" />
+    <ClInclude Include="src\Material.h" />
+    <ClInclude Include="src\Mesh.h" />
+    <ClInclude Include="src\Octree.h" />
+    <ClInclude Include="src\OctreeDebugSceneObject.h" />
+    <ClInclude Include="src\Plane.h" />
+    <ClInclude Include="src\SceneObject.h" />
+    <ClInclude Include="src\Shader.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="src\Application.h" />
+    <ClInclude Include="src\ShaderProgram.h" />
+    <ClInclude Include="src\SkyBox.h" />
+    <ClInclude Include="src\Texture.h" />
+    <ClInclude Include="src\Texture1D.h" />
+    <ClInclude Include="src\Texture2D.h" />
+    <ClInclude Include="src\Texture2DArray.h" />
+    <ClInclude Include="src\TextureCube.h" />
+    <ClInclude Include="src\Transform.h" />
+    <ClInclude Include="src\Utils.h" />
+    <ClInclude Include="src\VAO.h" />
+    <ClInclude Include="src\VBO.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

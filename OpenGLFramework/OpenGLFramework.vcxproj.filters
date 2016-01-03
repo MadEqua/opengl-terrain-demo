@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\GL">
+      <UniqueIdentifier>{868d87df-1936-4c1f-91a3-94258e680aff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GL">
+      <UniqueIdentifier>{e3179daa-3726-4410-96cb-eac76cf9c87b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Framework">
+      <UniqueIdentifier>{ee23c82c-5a09-4915-97ac-781f049e527b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Geometry">
+      <UniqueIdentifier>{6d017fa1-62ae-4be1-b7c6-b711778a7932}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Framework">
+      <UniqueIdentifier>{3ac8c448-c23c-4ccc-a024-b1d082b2da68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Geometry">
+      <UniqueIdentifier>{21abe2a1-4ca9-4ea5-b295-7aa41807caf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Framework\SceneObjects">
+      <UniqueIdentifier>{2e92887f-b46f-458a-acbf-ba464f85366c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Framework\SceneObjects">
+      <UniqueIdentifier>{d7e1bf81-5886-49eb-a62b-538b0dbc7e20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Interpolation">
+      <UniqueIdentifier>{31fe73ac-8398-42af-90bb-52486c07d150}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Interpolation">
+      <UniqueIdentifier>{d557cbe0-31c6-477e-8c8d-e9eb09b9aaac}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AABB.cpp">
+      <Filter>Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Application.cpp">
+      <Filter>Source Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AssetManager.cpp">
+      <Filter>Source Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Frustum.cpp">
+      <Filter>Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GLBuffer.cpp">
+      <Filter>Source Files\GL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GLObject.cpp">
+      <Filter>Source Files\GL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IBO.cpp">
+      <Filter>Source Files\GL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Intersections.cpp">
+      <Filter>Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Material.cpp">
+      <Filter>Source Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Mesh.cpp">
+      <Filter>Source Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Octree.cpp">
+      <Filter>Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Plane.cpp">
+      <Filter>Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Shader.cpp">
+      <Filter>Source Files\GL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ShaderProgram.cpp">
+      <Filter>Source Files\GL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Texture2D.cpp">
+      <Filter>Source Files\GL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Transform.cpp">
+      <Filter>Source Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VAO.cpp">
+      <Filter>Source Files\GL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VBO.cpp">
+      <Filter>Source Files\GL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utils.cpp">
+      <Filter>Source Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Texture.cpp">
+      <Filter>Source Files\GL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TextureCube.cpp">
+      <Filter>Source Files\GL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Texture2DArray.cpp">
+      <Filter>Source Files\GL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Texture1D.cpp">
+      <Filter>Source Files\GL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FBO.cpp">
+      <Filter>Source Files\GL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SkyBox.cpp">
+      <Filter>Source Files\Framework\SceneObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SceneObject.cpp">
+      <Filter>Source Files\Framework\SceneObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OctreeDebugSceneObject.cpp">
+      <Filter>Source Files\Framework\SceneObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Light.cpp">
+      <Filter>Source Files\Framework\SceneObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AABBDebugSceneObject.cpp">
+      <Filter>Source Files\Framework\SceneObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Camera.cpp">
+      <Filter>Source Files\Framework\SceneObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DirectionalLight.cpp">
+      <Filter>Source Files\Framework\SceneObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FreeCamera.cpp">
+      <Filter>Source Files\Framework\SceneObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LookAtCamera.cpp">
+      <Filter>Source Files\Framework\SceneObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Automation.cpp">
+      <Filter>Source Files\Interpolation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CubicInterpolator.cpp">
+      <Filter>Source Files\Interpolation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HermiteInterpolator.cpp">
+      <Filter>Source Files\Interpolation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Interpolator.cpp">
+      <Filter>Source Files\Interpolation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LinearInterpolator.cpp">
+      <Filter>Source Files\Interpolation</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\VBO.h">
+      <Filter>Header Files\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VAO.h">
+      <Filter>Header Files\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ShaderProgram.h">
+      <Filter>Header Files\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shader.h">
+      <Filter>Header Files\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IBO.h">
+      <Filter>Header Files\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GLObject.h">
+      <Filter>Header Files\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GLBuffer.h">
+      <Filter>Header Files\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Application.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Material.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Mesh.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Transform.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Plane.h">
+      <Filter>Header Files\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Intersections.h">
+      <Filter>Header Files\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Frustum.h">
+      <Filter>Header Files\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EventListener.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AABB.h">
+      <Filter>Header Files\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Asset.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AssetManager.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Octree.h">
+      <Filter>Header Files\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Texture2D.h">
+      <Filter>Header Files\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Texture.h">
+      <Filter>Header Files\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TextureCube.h">
+      <Filter>Header Files\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Texture2DArray.h">
+      <Filter>Header Files\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Texture1D.h">
+      <Filter>Header Files\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FBO.h">
+      <Filter>Header Files\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AABBDebugSceneObject.h">
+      <Filter>Header Files\Framework\SceneObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Camera.h">
+      <Filter>Header Files\Framework\SceneObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SceneObject.h">
+      <Filter>Header Files\Framework\SceneObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SkyBox.h">
+      <Filter>Header Files\Framework\SceneObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Light.h">
+      <Filter>Header Files\Framework\SceneObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OctreeDebugSceneObject.h">
+      <Filter>Header Files\Framework\SceneObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DirectionalLight.h">
+      <Filter>Header Files\Framework\SceneObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FreeCamera.h">
+      <Filter>Header Files\Framework\SceneObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LookAtCamera.h">
+      <Filter>Header Files\Framework\SceneObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Automation.h">
+      <Filter>Header Files\Interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CubicInterpolator.h">
+      <Filter>Header Files\Interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HermiteInterpolator.h">
+      <Filter>Header Files\Interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Interpolator.h">
+      <Filter>Header Files\Interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LinearInterpolator.h">
+      <Filter>Header Files\Interpolation</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
