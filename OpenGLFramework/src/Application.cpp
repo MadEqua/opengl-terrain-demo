@@ -188,11 +188,6 @@ void Application::keyCallback(const int key, const int scanCode, const int actio
 		int value = isCursorEnabled ? GLFW_CURSOR_NORMAL : GLFW_CURSOR_DISABLED;
 		glfwSetInputMode(window, GLFW_CURSOR, value);
 	}
-	else if (key == GLFW_KEY_LEFT_CONTROL && action == GLFW_PRESS) {
-		isCursorEnabled = !isCursorEnabled;
-		int value = isCursorEnabled ? GLFW_CURSOR_NORMAL : GLFW_CURSOR_DISABLED;
-		glfwSetInputMode(window, GLFW_CURSOR, value);
-	}
 	else if (key == GLFW_KEY_LEFT_ALT && action == GLFW_PRESS) {
 		vsyncEnabled = !vsyncEnabled;
 		setVsync();
