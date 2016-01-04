@@ -1,7 +1,7 @@
 # opengl-terrain-demo
 Modern OpenGL terrain rendering for learning purposes. Dependencies: Assimp, DevIL, glew, glfw, glm.
 
-Controls:
+###Controls:
 
 O, P -> Terrain height scale
 
@@ -18,14 +18,11 @@ F -> Toggle fog
 
 Left Alt -> Toggle vsync
 
-#Video:
-https://www.youtube.com/watch?v=jADa3OFTLCQ
+###[Youtube Video](https://www.youtube.com/watch?v=jADa3OFTLCQ)
 
-#Windows Executable:
+
+###[Windows Executable](http://www.bmlourenco.com/uploads/opengl-terrain-demo.zip)
 Requires driver support for OpenGL 4.5.
-
-??
-
 
 #Details:
 - Developed with C++, OpenGL and GLSL 4.5.
@@ -37,4 +34,3 @@ Requires driver support for OpenGL 4.5.
 - Single pass wireframe is implemented using nVidia's technique described on Solid Wireframe.
 - A basic shadow mapping algorithm is used to cast shadows on the terrain. Some percentage closer filtering (PCF) is applied to soften the aliased edges.
 - Fog is generated on the fragment shader as a function of distance to camera and altitude.
-
