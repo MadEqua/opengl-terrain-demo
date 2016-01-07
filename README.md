@@ -21,7 +21,7 @@ Left Alt -> Toggle vsync
 ###[Youtube Video](https://www.youtube.com/watch?v=jADa3OFTLCQ)
 
 
-###[Windows Executable](http://www.bmlourenco.com/uploads/opengl-terrain-demo.zip)
+###[Windows Executable](http://www.bmlourenco.com/downloads/opengl-terrain-demo.zip)
 Requires driver support for OpenGL 4.5.
 
 #Details:
