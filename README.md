@@ -34,3 +34,6 @@ Requires driver support for OpenGL 4.5.
 - Single pass wireframe is implemented using nVidia's technique described on Solid Wireframe.
 - A basic shadow mapping algorithm is used to cast shadows on the terrain. Some percentage closer filtering (PCF) is applied to soften the aliased edges.
 - Fog is generated on the fragment shader as a function of distance to camera and altitude.
+
+#License
+Licensed under the MIT license, see [LICENSE](https://github.com/MadEqua/opengl-terrain-demo/blob/master/LICENSE) for details.
