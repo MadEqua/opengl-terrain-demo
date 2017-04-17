@@ -24,7 +24,7 @@ Left Alt -> Toggle vsync
 ### [Windows Executable](http://www.bmlourenco.com/downloads/opengl-terrain-demo.zip)
 Requires driver support for OpenGL 4.5.
 
-#Details:
+# Details:
 - Developed with C++, OpenGL and GLSL 4.5.
 - Base framework abstracting and simplifying the use of OpenGL objects: buffers, textures, VAOs, FBOs and shaders. Abstracts mesh and texture loading. Also helps with the management of scene objects and their respective meshes and materials.
 - The terrain is defined through a height map and a normal map.
