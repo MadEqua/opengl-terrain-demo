@@ -24,9 +24,9 @@ Left Alt -> Toggle vsync
 Requires driver support for OpenGL 4.5.
 
 # Screenshots
-![](http://bmlourenco.com/public/images/opengl-terrain-demo/1.jpg)
-![](http://bmlourenco.com/public/images/opengl-terrain-demo/4.jpg)
-![](http://bmlourenco.com/public/images/opengl-terrain-demo/5.jpg)
+![](http://bmlourenco.com/portfolio/opengl-terrain-demo/images/gallery/1.jpg)
+![](http://bmlourenco.com/portfolio/opengl-terrain-demo/images/gallery/4.jpg)
+![](http://bmlourenco.com/portfolio/opengl-terrain-demo/images/gallery/5.jpg)
 
 # Details:
 - Developed with C++, OpenGL and GLSL 4.5.
